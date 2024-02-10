@@ -16,7 +16,7 @@ $(document).ready(() => {
   });
 
   // Check API status
-  $.get("http://localhost:5001/api/v1/status/", (data) => {
+  $.get("http://0.0.0.0:5001/api/v1/status/", (data) => {
     if (data.status === "OK") {
       $("div#api_status").addClass("available");
     } else {
@@ -26,7 +26,7 @@ $(document).ready(() => {
 
   // Initial places search
   $.ajax({
-    url: "http://localhost:5001/api/v1/places_search/",
+    url: "http://0.0.0.0:5001/api/v1/places_search/",
     type: "POST",
     headers: { "Content-Type": "application/json" },
     data: JSON.stringify({}),
@@ -69,7 +69,7 @@ $(document).ready(() => {
   $("button").click(function () {
     // Make a new POST request to places_search with the list of checked amenities
     $.ajax({
-      url: "http://localhost:5001/api/v1/places_search/",
+      url: "http://0.0.0.0:5001/api/v1/places_search/",
       type: "POST",
       headers: { "Content-Type": "application/json" },
       data: JSON.stringify({ amenities: Object.keys(amenities) }),
