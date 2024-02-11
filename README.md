@@ -156,6 +156,7 @@ No known bugs at this time.
 ## Authors
 
 Adebayo Bamiwo - [Github](https://github.com/bammietop03)
+
 Nkechi Udenkwor - [Github](https://github.com/Nkechi-Christabel)
 
 Second part of Airbnb: Joann Vuong
